@@ -30,6 +30,26 @@ return array(
                     ),
                 ),
             ),
+            'update' => array(
+                'type' => 'Zend\Mvc\Router\Http\Segment',
+                'options' => array(
+                    'route'    => '/update/:id',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action'     => 'update',
+                    ),
+                ),
+            ),
+            'delete' => array(
+                'type' => 'Zend\Mvc\Router\Http\Segment',
+                'options' => array(
+                    'route'    => '/delete/:id',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action'     => 'delete',
+                    ),
+                ),
+            ),
             'insert' => array(
                 'type' => 'Zend\Mvc\Router\Http\Literal',
                 'options' => array(
